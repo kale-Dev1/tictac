@@ -61,7 +61,20 @@ body{
 }
 
 .cell.x::before,
-.cell.x::after {
+.cell.x::after{
+    background-color: black;
+}
+
+.board.x .cell:not(.circle):not(.x):hover::before,
+.board.x .cell:not(.circle):not(.x):hover::after{
+    background-color: lightgrey;
+
+}
+.cell.x::before,
+.cell.x::after ,
+.board.x .cell:hover::before,
+.board.x .cell:hover::after
+{
     content: '';
     position: absolute;
     width: calc(var(--mark-size) * .15);
@@ -69,10 +82,13 @@ body{
     background-color: rgb(9, 9, 9);
     
 }
-.cell.x::before{
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before{
     transform: rotate(45deg);
 }
-.cell.x::after{
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after{
+    
     transform: rotate(-45deg);
 }
 

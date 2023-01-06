@@ -23,3 +23,6 @@ function handleClick(e){
 function placeMark(cell, currentClass){
     cell.classList.add(currentClass);
 }
+function swapTurns(){
+    circleTurn = !circleTurn
+}

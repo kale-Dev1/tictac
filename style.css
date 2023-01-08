@@ -186,11 +186,11 @@ body{
     font-family: 'Finger Paint', cursive;
 }
 .startTitle:hover{
-    font-size: 6rem;
-    color: brown;
+    color: rgb(163, 21, 21);
 }
 
-.tictacImage{
-    height: 100px;
-    width: 100px;
+img{
+    height: 300px;
+    width:300px;
+    background-color: aliceblue;
 }

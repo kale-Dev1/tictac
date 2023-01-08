@@ -15,15 +15,18 @@ const restartButton = document.getElementById('restartButton')
 const board = document.getElementById('board')
 const  winningmessagelement = document.getElementById('winningMessage')
 const winningtextelement = document.querySelector('[data-winning-message-text]')
+const startingPage = document.getElementById('startingGame')
+const startButton = document.querySelector('.startGameBtn')
 let circleTurn 
 
 cellElements.forEach(cell =>{
     cell.addEventListener('click', handleClick, {once:true})
 });
 
-startGame()
+
 
 restartButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame)
 
 function startGame(){
     circleTurn = false
@@ -35,6 +38,8 @@ function startGame(){
 })
 setBoardHoverClass()
 winningmessagelement.classList.remove('show');
+startingPage.classList.remove('show')
+
 }
 
 function handleClick(e){
@@ -98,3 +103,4 @@ function isDraw(){
         cell.classList.contains(CIRCLE_CLASS)
     })
 }
+

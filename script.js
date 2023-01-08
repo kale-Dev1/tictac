@@ -17,6 +17,7 @@ const  winningmessagelement = document.getElementById('winningMessage')
 const winningtextelement = document.querySelector('[data-winning-message-text]')
 const startingPage = document.getElementById('startingGame')
 const startButton = document.querySelector('.startGameBtn')
+const quitButton = document.querySelector('.quitButton')
 let circleTurn 
 
 cellElements.forEach(cell =>{
@@ -27,6 +28,7 @@ cellElements.forEach(cell =>{
 
 restartButton.addEventListener('click', startGame)
 startButton.addEventListener('click', startGame)
+quitButton.addEventListener('click', endingPage)
 
 function startGame(){
     circleTurn = false
@@ -104,3 +106,6 @@ function isDraw(){
     })
 }
 
+function endingPage(){
+    startingPage.classList.add('show')
+}

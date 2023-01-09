@@ -177,7 +177,6 @@ body{
     bottom: 0;
     background-color: black;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
 }
@@ -193,4 +192,25 @@ img{
     height: 300px;
     width:300px;
     background-color: aliceblue;
+    margin-bottom: 20px;
+}
+.startGameBtn{
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.startGameBtn:hover{
+    font-size: 2rem;
+    color: brown;
+    background-color: black;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
 }

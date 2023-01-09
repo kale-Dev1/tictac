@@ -24,6 +24,9 @@ cellElements.forEach(cell =>{
     cell.addEventListener('click', handleClick, {once:true})
 });
 
+let myArray = [1,2,3,4,5,6,7,8,9]
+console.log(myArray[Math.floor(Math.random()*myArray.length)])
+
 
 
 restartButton.addEventListener('click', startGame)
